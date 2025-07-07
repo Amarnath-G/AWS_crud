@@ -25,8 +25,8 @@ pipeline {
         stage('Run EC2 Action') {
             steps {
                 withCredentials([
-                    string(credentialsId: 'aws-keys', variable: 'AWS_ACCESS_KEY_ID'),
-                    string(credentialsId: 'aws-keys', variable: 'AWS_SECRET_ACCESS_KEY')
+                    string(credentialsId: 'aws-access-key', variable: 'AWS_ACCESS_KEY_ID'),
+                    string(credentialsId: 'aws-secret-key', variable: 'AWS_SECRET_ACCESS_KEY')
                 ]) {
                     sh '''
                         echo "Running action: $ACTION"
