@@ -16,11 +16,6 @@ pipeline {
     }
 
     stages {
-        stage('Install Boto3') {
-            steps {
-                sh 'pip install boto3'
-            }
-        }
 
         stage('Run EC2 Action') {
             steps {
