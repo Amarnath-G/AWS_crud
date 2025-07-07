@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         AWS_REGION = 'us-east-1'
-        INSTANCE_ID = 'i-0123456789abcdef0'
+        INSTANCE_ID = 'i-0266498606f00b27d'
         AMI_ID = 'ami-0abc1234567890'
         INSTANCE_TYPE = 't2.micro'
         KEY_NAME = 'my-key'
